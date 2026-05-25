@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta http-equiv="Content-Security-Policy" 
       content="default-src 'self'; script-src 'self' https://api.github.com https://api.rss2json.com https://cdn.jsdelivr.net; connec; style-src 'self' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
     <meta name="description"
       content="A simple portfolio website.">
     <meta name="keywords" content="AI Engineer, ML Engineer, Computer Vision, Gen AI, NLP, PyTorch, TensorFlow, Deep Learning, Data Science">
+   
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://Crammer.dev/">
     <meta property="og:title" content="AIML Engineer | CS Undergrad ">
@@ -30,5 +32,77 @@
 
 <body>
     <div class="container">
-        <nav
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <span class="nav-brand-name">Arnav Khandelwal</span>
+                <span class="nav-brand-tagline">AIML Engineer · CS Undergrad</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-i18n="nav.about">About</a>
+                <a href="projects.html" data-i18n="nav.projects">Projects</a>
+                <a href="cv.html" data-i18n="nav.resume">Resume</a>
+            </div>
+            <div class="nav-controls">
+                <button id="menu-toggle" class="menu-toggle" data-i18n-attr="aria-label:nav.menu_aria" aria-label="Toggle navigation">☰</button>
+                <button id="theme-toggle" data-i18n-attr="title:nav.theme_title" title="Switch Theme">☀</button>
+            </div>
+        </nav>
+
+        <section id = "hero">
+            <div class="hero-layout">
+                <div class="hero-panel-left">
+                    <p class="section-label" data-i18n="hero.label">Arnav Khandelwal // AIML Engineer · CS Undergrad // India</p>
+                    <h1 class="hero-display-name"><span id="typewriter"></span><span class="cursor">_</span></h1>
+
+                    <!-- Unified Python code box -->
+                    <div class="code-box">
+                        <div class="code-box-tab">
+                            <span class="code-box-dots"><span></span><span></span><span></span></span>
+                            MetaData.py
+                        </div>
+                        <div class="code-box-body">
+                            <p><span class="py-kw">from</span> education <span class="py-kw">import</span> ComputerScience</p>
+                            <p class="py-blank"></p>
+                            <p><span class="py-kw">class</span> <span class="py-fn">Arnav</span>(DataScientist, AIMLEngineer):</p>
+                            <p class="py-l1"><span class="py-str">"""</span></p>
+                            <p class="py-l2"><span class="py-str" data-i18n="code.doc_line1">Developer bridging the gap between</span></p>
+                            <p class="py-l2"><span class="py-str" data-i18n="code.doc_line2">models and production, architecting</span></p>
+                            <p class="py-l2"><span class="py-str" data-i18n="code.doc_line3">scalable data &amp; ML pipelines.</span></p>
+                            <p class="py-l1"><span class="py-str">"""</span></p>
+                            <p class="py-blank"></p>
+                            <p class="py-l1"><span class="py-kw">def</span> <span class="py-fn">__init__</span>(<span class="py-self">self</span>):</p>
+                            <p class="py-l2"><span class="py-self">self</span>.role<span class="py-op"> = </span><span class="py-str" data-i18n="code.role">"Data / ML Engineer"</span></p>
+                            <p class="py-l2"><span class="py-self">self</span>.base<span class="py-op"> = </span><span class="py-str" data-i18n="code.base">"India"</span></p>
+                            <p class="py-l2"><span class="py-self">self</span>.exp<span class="py-op"> = </span><span class="py-num">_</span>  <span class="py-comment" data-i18n="code.comment"># years of experience (To be filled)</span></p>
+                            <p class="py-blank"></p>
+                            <p class="py-l1"><span class="py-kw">def</span> <span class="py-fn">mission</span>(<span class="py-self">self</span>) -&gt; <span class="py-type">str</span>:</p>
+                            <p class="py-l2"><span class="py-kw">return</span> <span class="py-str" data-i18n="code.mission">"Making meaningful contributions to the field of AI and Machine Learning."</span></p>
+                        </div>
+                    </div>
+
+                    <h2 class="hero-subtitle"><span data-i18n="hero.subtitle_line1">DATA & ML ENGINEER //</span><br><span data-i18n="hero.subtitle_line2">SCALABLE PIPELINES //</span><br><span data-i18n="hero.subtitle_line3">AI PRODUCT DEVELOPMENT</span></h2>
+                </div>
+
+<!-- #TO DO : Replace with images -->
+
+                <!-- Hero Visual: profile photo -->
+                <div class="hero-panel-right">
+                    <div class="video-frame-wrapper">
+                        <a href="cv.html" class="profile-link">
+                            <div class="video-frame" id="hero-frame">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img active">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img">
+                                <img src="_" alt="Arnav Khandelwal" class="profile-img">
+                                <div class="profile-hover-overlay"><span>View_Profile()</span></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
 </html>
