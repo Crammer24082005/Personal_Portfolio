@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self' https://api.github.com https://api.rss2json.com https://cdn.jsdelivr.net; connect-src 'self' https://api.github.com https://api.rss2json.com; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title.projects">Arnav | Projects</title>
+    <link rel="icon" type="image/svg+xml" href="content/icon.svg">
+    <script src="theme-init.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Fira+Code:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="nav-brand">
+                <span class="nav-brand-name">Arnav Khandelwal</span>
+                <span class="nav-brand-tagline" data-i18n="nav.tagline">AI Engineer // India</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html" data-i18n="nav.about">About</a>
+                <a href="projects.html" data-i18n="nav.projects">Projects</a>
+                <a href="cv.html" data-i18n="nav.resume">Resume</a>
+            </div>
+            <div class="nav-controls">
+                <button id="menu-toggle" class="menu-toggle" data-i18n-attr="aria-label:nav.menu_aria" aria-label="Toggle navigation">☰</button>
+                <button id="theme-toggle" data-i18n-attr="title:nav.theme_title" title="Switch Theme">☀</button>
+            </div>
+        </nav>
+
+        <section class="section">
+            <div class="page-hero">
+                <div class="page-hero-left">
+                    <span class="page-hero-label" data-i18n="projects.label">Repository Feed // GitHub API</span>
+                    <h1 class="page-hero-title"><span data-i18n="projects.title_line1">OPEN SOURCE</span><br><span data-i18n="projects.title_line2">/ PROJECTS</span></h1>
+                    <p class="page-hero-subtitle" data-i18n="projects.subtitle">A collection of data engineering and ML projects.</p>
+                </div>
+                <div class="page-hero-meta">
+                    <span class="page-hero-meta-label" data-i18n="projects.briefing_label">System Briefing</span>
+                    <p class="page-hero-meta-text" data-i18n="projects.briefing_text">Repositories fetched live from GitHub API, sorted by community interest.</p>
+                    <div class="page-hero-stats">
+                        <div>
+                            <span class="page-hero-stat-label" data-i18n="projects.source">Source</span>
+                            <span class="page-hero-stat-value">GitHub</span>
+                        </div>
+                        <div>
+                            <span class="page-hero-stat-label" data-i18n="projects.status">Status</span>
+                            <span class="page-hero-stat-value" style="font-family: var(--font-code); font-size: 0.9rem; font-style: normal; color: var(--accent-color);" data-i18n="projects.status_online">Online</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p style="color: var(--text-secondary); margin-bottom: 24px; font-family: var(--font-code); font-size: 0.82rem;" data-i18n="projects.git_cmd">
+                > git fetch origin master --sort=stars
+            </p>
+
+            <div class="proj-list" id="repo-grid">
+                <p style="color: var(--accent-color); font-family: var(--font-code);" data-i18n="projects.loading">_fetching_data_from_github...</p>
+            </div>
+        </section>
+
+        <footer>
+            <div style="margin-top: 50px; opacity: 0.5; text-align: center; font-family: var(--font-code); font-size: 0.8rem;" data-i18n="footer.copy">
+                &copy; 2026 Arnav Khandelwal. Built with code.
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/i18n.js"></script>
+    <script src="loader.js"></script>
+</body>
+
+</html>
