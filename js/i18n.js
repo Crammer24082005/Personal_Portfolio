@@ -927,7 +927,7 @@
                 el.setAttribute(attr, t(key, lang));
             });
         });
-
+ 
         // <title> element if it has data-i18n
         const titleEl = document.querySelector('title[data-i18n]');
         if (titleEl) {
@@ -1137,7 +1137,7 @@
     // Auto-init
     document.addEventListener('DOMContentLoaded', () => {
         applyTranslations();
-        initLangSwitcher();
+        // initLangSwitcher(); // Removed language change button
         initTypewriterCycle();
     });
 })();
