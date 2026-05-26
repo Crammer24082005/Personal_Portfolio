@@ -62,6 +62,7 @@
             // Footer / status
             'status.online': 'System Status: Online',
             'status.copenhagen': 'Copenhagen',
+            'status.india': 'India',
             'footer.copy': '© 2026 Arnav Khandelwal. Built with code.',
 
             // Projects page
@@ -326,6 +327,7 @@
 
             'status.online': 'Systemstatus: Online',
             'status.copenhagen': 'København',
+            'status.india': 'Indien',
             'footer.copy': '© 2026 Arnav Khandelwal. Bygget med kode.',
 
             'projects.label': 'Repository-feed // GitHub API',

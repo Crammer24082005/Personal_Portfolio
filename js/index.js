@@ -8,14 +8,14 @@ function updateTime() {
     if (!timeContainer) return;
 
     const now = new Date().toLocaleTimeString('en-GB', {
-        timeZone: 'Europe/Copenhagen',
+        timeZone: 'Asia/Kolkata',
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
         timeZoneName: 'short'
     });
 
-    timeContainer.innerText = `${(window.i18n ? window.i18n.t('status.copenhagen') : 'Copenhagen')}: ${now}`;
+    timeContainer.innerText = `${(window.i18n ? window.i18n.t('status.india') : 'India')}: ${now}`;
 }
 
 // ── HERO LOAD REVEAL ──────────────────────────────────────
