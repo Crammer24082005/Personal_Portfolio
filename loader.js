@@ -85,80 +85,33 @@ const REPO_TAGS = {
 // ─── Curated display metadata (for the Editorial projects cards) ───
 // name → { title, desc, cats: [string] }
 const PROJECT_META = {
-    'Python-Object-Clasifier': {
-        title: 'Topic Modeling Classifier',
-        desc: 'Latent Dirichlet Allocation pipeline that discovers topics from raw text and routes documents to the right bucket. Classic NLP foundation work.',
-        cats: ['NLP', 'ML'],
+    'screen-analyzer': {
+        title: 'screen-analyzer',
+        desc: 'OCR + GenAI based real time assistant.',
+        cats: ['CV', 'GENERATIVE AI'],
     },
-    'nextrank': {
-        title: 'SEO Content Generator',
-        desc: 'Automated content generation tool optimized for SEO performance. LLM-powered pipeline that researches keywords, drafts copy, and scores readability against competitor SERPs.',
-        cats: ['NLP', 'GENERATIVE AI', 'FULL STACK'],
+    'Agentic-honeypot': {
+        title: 'Agentic-honeypot',
+        desc: 'AI-powered scam detection API.',
+        cats: ['ML', 'Cybersecurity'],
     },
-    'scoring-bank-project': {
-        title: 'Bank Credit Scoring',
-        desc: 'End-to-end credit risk model with imbalanced learning. LightGBM + SHAP explainability, served through a Streamlit dashboard where loan officers can interrogate any prediction.',
-        cats: ['ML', 'ANALYTICS', 'FINANCE'],
-    },
-    'openweather': {
-        title: 'OpenWeather Integration',
-        desc: 'Lightweight Python client for the OpenWeather API. Fetches and normalizes real-time meteorological data for downstream pipelines.',
-        cats: ['ENGINEERING', 'API'],
-    },
-    'fruit-classifier-aws': {
-        title: 'Distributed Fruit Classifier',
-        desc: 'Image classification at scale on AWS EMR. PySpark broadcasts a TensorFlow model across executors to process 50k+ images in parallel — distributed deep learning on cloud infra.',
-        cats: ['ML', 'CLOUD', 'DISTRIBUTED'],
-    },
-    'nutriscore-predictor': {
-        title: 'Nutriscore Prediction',
-        desc: 'Linear regression to predict the Nutri-Score of food products from nutritional facts. Showcases predictive modeling on a public OpenFoodFacts dataset.',
-        cats: ['ML', 'ANALYTICS'],
-    },
-    'python-client-segmentation': {
-        title: 'Customer Segmentation',
-        desc: 'K-Means clustering on customer behavior data to surface actionable marketing personas. Pandas-driven feature engineering and silhouette-based cluster validation.',
-        cats: ['ML', 'ANALYTICS', 'MARKETING'],
-    },
-    'seattle-building-energy-forecast': {
-        title: 'Energy Consumption Prediction',
-        desc: 'Regression models forecasting building energy use from weather and occupancy features. Scikit-learn pipelines with full EDA and visualization of feature importance.',
-        cats: ['ML', 'ANALYTICS', 'FORECASTING'],
-    },
-    'Verba': {
-        title: 'Verba RAG Chatbot',
-        desc: 'Open-source retrieval-augmented chatbot with Weaviate vector store. Indexes any document corpus and answers questions with citations — pluggable LLM backends.',
-        cats: ['NLP', 'RAG', 'FULL STACK'],
-    },
-    'sgtm-cloud-run-shell': {
-        title: 'Server-side GTM on Cloud Run',
-        desc: 'Shell scaffolding to deploy a server-side Google Tag Manager container on GCP Cloud Run. DevOps recipe for privacy-friendly tracking infra.',
-        cats: ['CLOUD', 'DEVOPS', 'GCP'],
-    },
-    'docker-stacks-pyspark': {
-        title: 'Docker PySpark Stacks',
-        desc: 'Reproducible Docker images bundling Jupyter + PySpark for local distributed-data prototyping. Works as a base for ML notebooks needing Spark.',
-        cats: ['ENGINEERING', 'DEVOPS'],
+    'BreakHis_Cancer_Classifier': {
+        title: 'BreakHis Cancer Classifier',
+        desc: 'Deep learning model for classifying breast cancer histopathological images. Utilizes CNN architectures for automated diagnosis and prognosis.',
+        cats: ['ML', ' COMPUTER VISION', 'HEALTHCARE'],
     },
 };
 
 // Ordered list of repos to feature on the projects page. Edit to curate.
 const FEATURED_ORDER = [
-    'Python-Object-Clasifier',
-    'nextrank',
-    'scoring-bank-project',
-    'openweather',
-    'fruit-classifier-aws',
-    'nutriscore-predictor',
-    'python-client-segmentation',
-    'seattle-building-energy-forecast',
+    'screen-analyzer',
+    'Agentic-honeypot',
+    'BreakHis_Cancer_Classifier',
 ];
 
 const CONFIG = {
-    githubUser: 'mhaegeman', // Replace with your actual GitHub username
-    mediumUser: 'maximehaegeman', // Replace with your actual Medium username
-    maxRepos: 6,
-    maxArticles: 8
+    githubUser: 'Crammer24082005', // Replace with your actual GitHub username
+    maxRepos: 4,
 };
 
 // --- THEME SWITCHER LOGIC ---
@@ -547,7 +500,7 @@ function initPrintButton() {
 
         const tempLink = document.createElement('a');
         tempLink.href = resumePdfPath;
-        tempLink.setAttribute('download', 'Maxime_Haegeman_2026.pdf');
+        tempLink.setAttribute('download', 'resume_2026.pdf');
         tempLink.setAttribute('target', '_blank');
         tempLink.setAttribute('rel', 'noopener');
         document.body.appendChild(tempLink);

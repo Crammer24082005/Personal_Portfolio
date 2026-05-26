@@ -160,12 +160,6 @@
         return h('div', { class: 'cv-section' }, [
             h('div', { class: 'cv-grid' }, [
                 h('div', { class: 'cv-reveal' }, [
-                    h('span', { class: 'cv-section-label' }, ['_roles.timeline']),
-                    h('div', { class: 'cv-roles' },
-                        jobs.map(job => buildRole(job, state))
-                    ),
-                ]),
-                h('div', { class: 'cv-reveal' }, [
                     h('span', { class: 'cv-section-label' }, ['_skill_density.heatmap']),
                     buildMatrix(matrix),
                 ]),
