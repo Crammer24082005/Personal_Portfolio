@@ -54,14 +54,14 @@
             'code.doc_line1': 'Developer bridging the gap between',
             'code.doc_line2': 'models and production, architecting',
             'code.doc_line3': 'scalable data & ML pipelines.',
-            'code.role': '"Senior Data / ML Engineer"',
-            'code.base': '"Copenhagen, Denmark"',
+            'code.role': '"AI & ML Engineer"',
+            'code.base': '"India"',
             'code.comment': '# years of experience',
             'code.mission': '"From messy data to reliable predictions, at scale."',
 
             // Footer / status
             'status.online': 'System Status: Online',
-            'status.copenhagen': 'Copenhagen',
+            'status.copenhagen': 'India',
             'status.india': 'India',
             'footer.copy': '© 2026 Arnav Khandelwal. Built with code.',
 
